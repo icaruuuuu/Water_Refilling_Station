@@ -1,0 +1,12 @@
+$btn-width:            1em;
+$btn-height:           $btn-width;
+$btn-padding-x:        .25em;
+$btn-padding-y:        btn-padding-x;
+$btn-color:            black;
+$btn-bg:               url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$btn-color}'><path d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/></svg>");
+$btn-focus-shadow:     focus-ring-box-shadow;
+$btn-opacity:          .5;
+$btn-hover-opacity:    .75;
+$btn-focus-opacity:    1;
+$btn-disabled-opacity: .25;
+$btn-white-filter:     invert(1) grayscale(100%) brightness(200%);
