@@ -1,18 +1,4 @@
-card-body:hover{
-    color: teal;
-}
-.side-bar
-{
-    width: var(--offcanvas-width);
-}
-
-.sidebar-link
-{
-    display: flex;
-    align-items: center;
-}
-.sidebar-link .right-icon
-{
-    display: inline-flex;
-    transition: all ease 0.5s;
+.card:hover{
+    Width: 270px; 
+    height: 140px;
 }
