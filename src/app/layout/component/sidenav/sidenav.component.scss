@@ -42,6 +42,7 @@ bottom:0;
 height:100%;
 left:0;
 width:240px;
+transition: width .75s ease-in-out
 //overflow: ;
 //-webkit-transition:width .05s linear;
 //transition:width .05s linear;
@@ -51,12 +52,14 @@ width:240px;
 
 .main-menu>ul {
 margin:7px 0;
+transition: width .75s ease-in-out
 }
 
 .main-menu li {
 position:relative;
 display:block;
 width:240px;
+transition: width .75s ease-in-out
 }
 
 .main-menu li>a {
@@ -71,7 +74,7 @@ text-decoration:none;
 -webkit-transform:translateZ(0) scale(1,1);
 -webkit-transition:all .1s linear;
 transition:all .1s linear;
-  
+transition: width .75s ease-in-out
 }
 
 .main-menu .nav-icon {
@@ -82,6 +85,7 @@ height:36px;
 text-align:center;
 vertical-align:middle;
 font-size:18px;
+transition: width .75s ease-in-out
 }
 
 .main-menu .nav-text {
@@ -90,12 +94,14 @@ display:table-cell;
 vertical-align:middle;
 width:190px;
   font-family: 'Titillium Web', sans-serif;
+  transition: width .75s ease-in-out
 }
 
 .main-menu>ul.logout {
 position:absolute;
 left:0;
 bottom:0;
+transition: width .75s ease-in-out
 }
 
 //.no-touch .scrollable.hover {
@@ -117,6 +123,7 @@ nav {
 -ms-user-select:none;
 -o-user-select:none;
 user-select:none;
+transition: width .75s ease-in-out
 }
 
 nav ul,nav li {
