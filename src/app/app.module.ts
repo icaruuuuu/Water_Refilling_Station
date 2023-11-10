@@ -5,10 +5,12 @@ import { AppComponent } from './app.component';
 import { LoginModule } from './login/login.module';
 import { LayoutModule } from './layout/layout.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { OrderFormComponent } from './order-form/order-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    OrderFormComponent,
   ],
   imports: [
     BrowserModule,
