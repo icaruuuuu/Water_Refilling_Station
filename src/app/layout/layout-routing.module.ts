@@ -18,7 +18,7 @@ const routes: Routes = [
         loadChildren: ()=>import('./dashboard/dashboard.module').then(mod => mod.DashboardModule),
       },
       {
-        path: "client",
+        path: "client-management",
         loadChildren: ()=>import('./client-management/client-management.module').then(mod => mod.ClientManagementModule),
       },
     ]

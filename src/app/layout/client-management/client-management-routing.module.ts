@@ -1,16 +1,12 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { ClientManagementComponent } from './client-management.component';
+import { CommonModule } from '@angular/common';
 
-const routes  : Routes =[
-  {
-    path: "",
-    component: ClientManagementComponent
-  }
-]
+
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  declarations: [],
+  imports: [
+    CommonModule
+  ]
 })
 export class ClientManagementRoutingModule { }
