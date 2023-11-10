@@ -5,8 +5,6 @@ import { SidenavComponent } from './component/sidenav/sidenav.component';
 import { LayoutComponent } from './layout.component';
 import { LayoutRoutingModule } from './layout-routing.module';
 
-
-
 @NgModule({
   declarations: [
     LayoutComponent,
