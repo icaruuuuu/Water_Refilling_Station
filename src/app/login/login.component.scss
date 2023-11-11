@@ -9,17 +9,20 @@ font-family: 'Poppins', sans-serif;
 }
 html,body{
 display: grid;
-height: 173%;
+height: 966px;
 width: 100%;
 place-items: center;
-background: #85c8e2 ;
-background: linear-gradient(-150deg, #50c8b4, #4158d0); 
+//background: #85c8e2 ;
+background: linear-gradient(-150deg, #50c8b4, #4158d0);
+-webkit-backdrop-size: cover; 
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 }
 .logo {
 	display: flex;
     margin-bottom: 0%;
 	padding-left: 95px;
-
 }
 .logo-img {
 	width: 180px;
