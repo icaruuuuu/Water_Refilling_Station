@@ -13,7 +13,7 @@ height: 966px;
 width: 100%;
 place-items: center;
 //background: #85c8e2 ;
-background: linear-gradient(-150deg, #50c8b4, #4158d0);
+background: linear-gradient(-150deg, #2c8582, #062122);
 -webkit-backdrop-size: cover; 
 -moz-background-size: cover;
 -o-background-size: cover;
@@ -73,7 +73,7 @@ transition: all 0.3s ease;
 }
 .wrapper form .field input:focus,
 form .field input:valid{
-border-color: #4158d0;
+border-color: #2c8582;
 }
 .wrapper form .field label{
 position: absolute;
@@ -90,7 +90,7 @@ form .field input:focus ~ label,
 form .field input:valid ~ label{
 top: 0%;
 font-size: 16px;
-color: #4158d0;
+color: #2c8582;
 background: #fff;
 transform: translateY(-50%);
 }
@@ -128,7 +128,7 @@ margin-top: -5px;
 font-size: 15px;
 font-weight: 500;
 cursor: pointer;
-background-color: teal;
+background-color: #2c8582;
 transition: all 0.3s ease;
 }
 .btn :active{
