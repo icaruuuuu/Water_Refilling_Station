@@ -4,11 +4,12 @@ import { ScreenComponent } from './component/screen/screen.component';
 import { SidenavComponent } from './component/sidenav/sidenav.component';
 import { LayoutComponent } from './layout.component';
 import { LayoutRoutingModule } from './layout-routing.module';
-import { PrintSalesComponent } from './print-sales/print-sales.component';
+import { TopnavComponent } from './component/topnav/topnav.component';
 
 @NgModule({
   declarations: [
     LayoutComponent,
+    TopnavComponent,
     ScreenComponent,
     SidenavComponent,
   ],
