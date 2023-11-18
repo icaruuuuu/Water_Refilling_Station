@@ -1,116 +1,192 @@
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
-<div class="container bootstrap snippets bootdeys">
-<div class="row">
-  <div class="col-sm-12">
-	  	<div class="panel panel-default invoice" id="invoice">
-		  <div class="panel-body">
-			<div class="invoice-ribbon"><div class="ribbon-inner">PAID</div></div>
-		    <div class="row">
+<style type="text/css">
+		body{
+			background-color: #ffffff;
+		}
+        .invoice-box {
+            max-width: 800px;
+            margin: auto;
+            padding: 30px;
+            border: 1px solid #eee;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+            font-size: 16px;
+            line-height: 24px;
+            font-family: Arial, sans-serif;
+			background: #ffffff;
+        }
 
-				<div class="col-sm-6 top-left">
-					<i class="fa fa-rocket"></i>
-				</div>
+        .invoice-box table {
+            width: 100%;
+            line-height: inherit;
+            text-align: left;
+        }
 
-				<div class="col-sm-6 top-right">
-						<h3 class="marginright">INVOICE-12345678</h3>
-						<span class="marginright">14 December 2023</span>
-			    </div>
+        .invoice-box table td {
+            padding: 5px;
+            vertical-align: top;
+        }
 
-			</div>
-			<hr>
-			<div class="row">
+        .invoice-box table tr td:nth-child(2)
+        {
+            text-align: right;
+        }
 
-				<div class="col-xs-4 from">
-					<p class="lead marginbottom">From : CVMRR</p>
-					<p>13, Milflores St.</p>
-					<p>mayapyap Norte, Cabanatuan City</p>
-					<p>Nueva Ecija, 3100</p>
-					<p>Phone: 0999-454-3232</p>
-					<p>Email: contact@cvmrr.com</p>
-				</div>
+        .invoice-box table tr.top table td 
+        {
+            padding-bottom: 20px;
+        }
 
-				<div class="col-xs-4 to">
-					<p class="lead marginbottom">To : John Doe</p>
-					<p>425 Market Street</p>
-					<p>Apartment 201, Cabanatuan City</p>
-					<p>Nueva Ecija, 3100</p>
-					<p>Phone: 0966-858-7319</p>
-					<p>Email: john@doe.com</p>
+        .invoice-box table tr.information table td 
+        {
+            padding-bottom: 40px;
+        }
 
-			    </div>
+        .invoice-box table tr.heading td 
+        {
+            background: #eee;
+            border-bottom: 1px solid #ddd;
+            font-weight: bold;
+        }
 
-			    <div class="col-xs-4 text-right payment-details">
-					<p class="lead marginbottom payment-info">Payment details</p>
-					<p>Date: 14 December 2023</p>
-					<p>VAT: DK888-777 </p>
-					<p>Total Amount: ₱991</p>
-					<p>Account Name: J.Doe</p>
-			    </div>
+        .invoice-box table tr.details td 
+        {
+            background: #eee;
+            border-bottom: 1px solid #ddd;
+            font-weight: bold;
+        }
 
-			</div>
 
-			<div class="row table-row">
-				<table class="table table-striped">
-			      <thead>
-			        <tr>
-			          <th class="text-center" style="width:5%">#</th>
-			          <th style="width:50%">Item</th>
-			          <th class="text-right" style="width:15%">Quantity</th>
-			          <th class="text-right" style="width:15%">Unit Price</th>
-			          <th class="text-right" style="width:15%">Total Price</th>
-			        </tr>
-			      </thead>
-			      <tbody>
-			        <tr>
-			          <td class="text-center">1</td>
-			          <td>350ml</td>
-			          <td class="text-right">10</td>
-			          <td class="text-right">₱18</td>
-			          <td class="text-right">₱180</td>
-			        </tr>
-			        <tr>
-			          <td class="text-center">2</td>
-			          <td>500ml</td>
-			          <td class="text-right">6</td>
-			          <td class="text-right">₱59</td>
-			          <td class="text-right">₱254</td>
-			        </tr>
-			        <tr>
-			          <td class="text-center">3</td>
-			          <td>1L</td>
-			          <td class="text-right">4</td>
-			          <td class="text-right">₱95</td>
-			          <td class="text-right">₱285</td>
-			        </tr>
-			         <tr class="last-row">
-			          <td class="text-center">4</td>
-			          <td>5Gal Round</td>
-			          <td class="text-right">1</td>
-			          <td class="text-right">₱300</td>
-			          <td class="text-right">₱300</td>
-			        </tr>
-			       </tbody>
-			    </table>
+        .invoice-box table tr.item td
+        {
+            border-bottom: 1px solid #ddd;
+        }
 
-			</div>
+        @media only screen and (max-width: 600px)
+        {
+            .invoice-box table tr.top table td
+            {
+                width: 100%;
+                display: block;
+                text-align: center;
+            }
 
-			<div class="row">
-			<div class="col-xs-6 margintop">
-				<p class="lead marginbottom">THANK YOU!</p>
+            .invoice-box table tr.information table.td 
+            {
+                width: 100%;
+                display: block;
+                text-align: center;
+            }
+        }
 
-				<button class="btn btn-success" id="invoice-print"><i class="fa fa-print"></i> Print Invoice</button>
-				<button class="btn btn-danger"><i class="fa fa-envelope-o"></i> Mail Invoice</button>
-			</div>
-			<div class="col-xs-6 text-right pull-right invoice-total">
-					  <p>Subtotal : ₱1019</p>
-			          <p>Discount (10%) : ₱101 </p>
-			          <p>VAT (8%) : ₱73 </p>
-			          <p>Total : ₱991 </p>
-			</div>
-			</div>
 
-		  </div>
-		</div>
+
+    </style>
+
+	<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+		<button class="btn btn-success me-md-2" id="invoice-print"><i class="fa fa-print"></i> Print Invoice</button>
+		<button class="btn btn-danger "><i class="fa fa-envelope-o"></i> Mail Invoice</button>
 	</div>
-</div>
-</div>
+    <div class="invoice-box mt-3">
+        <table cellpadding="0" cellspacing="0">
+            <tr class="top">
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td>
+                                <h4>Water Refilling Management System</h4>
+                            </td>
+                            <td>
+                                Invoice #: 069 <br>
+                                Printed: November 18, 2023 <br>
+                            </td>
+                        </tr>
+                    </table>
+
+
+                </td>
+            </tr>
+
+            <tr class="information">
+                <td colspan="2">
+
+                    <table>
+                        <tr>
+                            <td>
+                                Billed To: Maggie Beau<br>
+                                Feteville, Tinman Industrial Area <br>
+                                MaggieBeau@yahoo.com <br>
+                                001-234-5678
+                            </td>
+
+                            <td>
+                                CVMRR Water Refilling Station <br>
+                                Contact Number: +639123456789 <br>
+                                Nueva Ecija, Cabanatuan City <br>
+                            </td>
+                            
+                        </tr>
+                    </table>
+
+                </td>
+            </tr>
+
+
+            <tr class="heading">
+                <td>
+                    Payment Method
+                </td>
+                <td>Receipt #</td>
+            </tr>
+
+            <tr>
+                <td>Check</td>
+                <td>₱100</td>
+            </tr>
+
+            <tr class="details">
+                <td>Item</td>
+                <td>Price</td>
+            </tr>
+
+            <tr>
+                <td>5 Gal Round Refill</td>
+                <td>₱240</td>
+            </tr>
+
+            <tr class="heading">
+                <td>Amount</td>
+                <td>₱100</td>
+            </tr>
+
+            <tr class="item">
+                <td>350 ml</td>
+                <td>₱18</td>
+            </tr>
+
+            <tr class="item">
+                <td>500 ml</td>
+                <td>₱20</td>
+            </tr>
+
+            <tr class="item">
+                <td>1 litre</td>
+                <td>₱40</td>
+            </tr>
+
+            <tr class="item">
+                <td>2 Litre</td>
+                <td>₱95</td>
+            </tr>
+
+            <tr class="item">
+                <td>5 Gal Slim</td>
+                <td>₱200</td>
+            </tr>
+
+            <tr class="item">
+                <td>5Gal Round</td>
+                <td>₱240</td>
+            </tr>
+        </table>
+		<br>
+    </div>
+	<br><br>
