@@ -55,17 +55,32 @@
 
         <!--Quantity-->
         <div class=" container dropdown mt-3">
-          <button id="quantity" class="btn btn-info btn-lg dropdown-toggle mt-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Quantity
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">350ml</a></li>
-            <li><a class="dropdown-item" href="#">500ml</a></li>
-            <li><a class="dropdown-item" href="#">1L</a></li>
-            <li><a class="dropdown-item" href="#">2L</a></li>
-            <li><a class="dropdown-item" href="#">5Gal Slim</a></li>
-            <li><a class="dropdown-item" href="#">5Gal Round</a></li>
-          </ul>
+          <div class="container-fluid">
+              <select class="form-select form-select-sm mt-2" aria-label="Large select example" id="containerSize">
+                <option selected>Size of Container</option>
+                <option value="1">350ml</option>
+                <option value="2">500ml</option>
+                <option value="3">1 Liter</option>
+                <option value="4">2 Liters</option>
+                <option value="5">5Gal Slim</option>
+                <option value="6">5Gal Round</option>
+              </select>
+              <select class="form-select form-select-sm mt-2" aria-label="Large select example" id="containerQuantity">
+                <option selected>Quantity of Containers</option>
+                <option value="1">One (1)</option>
+                <option value="2">Two (2)</option>
+                <option value="3">Three (3)</option>
+                <option value="4">Four (4)</option>
+                <option value="5">Five (5)</option>
+                <option value="6">Six (6)</option>
+                <option value="7">Seven (7)</option>
+                <option value="8">Eight (8)</option>
+                <option value="9">Nine (9)</option>
+                <option value="10">Ten (10)</option>
+                <option value="11">Eleven (11)</option>
+                <option value="12">Tweleve (12)</option>
+              </select>
+          </div>
         </div>
         
         <!-- Place Order -->
