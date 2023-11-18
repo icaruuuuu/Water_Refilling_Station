@@ -4,33 +4,34 @@
   </div>
   <div class="card-body">
       <div class="container-fluid">
-          <form id="filter-form" method="GET">
+          <form >
               <div class="row align-items-end">
-                  <div class="col-md-3">
-                      <div class="form-group">
-                          <label for="" class="control-label">Type</label>
-                          <select name="type" id="type" class="custom-select select-2">
-                              <option value="all">All</option>
-                              <option value="1" >Walk-In</option>
-                              <option value="2" >Delivered</option>
+                  <div class="col-md-3 p-2">
+                    <div class="form-group">
+                        <label for="" class="control-label">Type</label>
+                        <br>
+                        <select class="form-select" size="1" aria-label="Size 3 select example">
+                            <option selected>All</option>
+                            <option value="1">Walk-In</option>
+                            <option value="2">Delivered</option>
                           </select>
-                      </div>
-                  </div>
-                  <div class="col-md-3">
+                    </div>
+                </div>
+                  <div class="col-md-3 p-2">
                       <div class="form-group">
                           <label for="" class="control-label">Date Start</label>
                           <input type="date" class="form-control" reqiured name="date_start" value="">
                       </div>
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-md-3 p-2">
                       <div class="form-group">
                           <label for="" class="control-label">Date End</label>
                           <input type="date" class="form-control" reqiured name="date_end" value="">
                       </div>
                   </div>
-                      <div class="form-group col-md-3 ">
-                          <button class="btn btn-flat btn-primary md-1 mb-1 me-1"> Filter</button>
-                          <button class="btn btn-flat btn-success md-1 mb-1" id="print" type="button"> <i class="fa fa-print"></i> Print</button>
+                      <div class="form-group col-md-3 p-2">
+                          <button class="btn btn-flat btn-primary md-1  me-1"> Filter</button>
+                          <button class="btn btn-flat btn-success md-1 " id="print" type="button"> <i class="fa fa-print"></i> Print</button>
                       </div>
               </div>
           </form>
