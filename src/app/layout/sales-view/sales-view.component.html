@@ -1,3 +1,101 @@
+<div class="card card-outline card-primary">
+  <div class="card-header">
+      <h3 class="card-title">Sales Report</h3>
+  </div>
+  <div class="card-body">
+      <div class="container-fluid">
+          <form id="filter-form" method="GET">
+              <div class="row align-items-end">
+                  <div class="col-md-3">
+                      <div class="form-group">
+                          <label for="" class="control-label">Type</label>
+                          <select name="type" id="type" class="custom-select select-2">
+                              <option value="all">All</option>
+                              <option value="1" >Walk-In</option>
+                              <option value="2" >Delivered</option>
+                          </select>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="form-group">
+                          <label for="" class="control-label">Date Start</label>
+                          <input type="date" class="form-control" reqiured name="date_start" value="">
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="form-group">
+                          <label for="" class="control-label">Date End</label>
+                          <input type="date" class="form-control" reqiured name="date_end" value="">
+                      </div>
+                  </div>
+                      <div class="form-group col-md-3 ">
+                          <button class="btn btn-flat btn-primary md-1 mb-1 me-1"> Filter</button>
+                          <button class="btn btn-flat btn-success md-1 mb-1" id="print" type="button"> <i class="fa fa-print"></i> Print</button>
+                      </div>
+              </div>
+          </form>
+          <div id="print_out">
+              <style>
+                  .details-tbl tr, .details-tbl td, .details-tbl th{
+                      border : unset !important;
+                  }
+                  .details-tbl td, .details-tbl th{
+                      padding :3px 5px !important;
+                  }
+              </style>
+                    <table class="table table-bordered table-stripped" id="indi-list">
+                              <colgroup>
+                                  <col width="5%">
+                                  <col width="10%">
+                                  <col width="20%">
+                                  <col width="10%">
+                                  <col width="40%">
+                                  <col width="15%">
+                              </colgroup>
+                              <thead>
+                                  <tr>
+                                      <th class="text-center">#</th>
+                                      <th>Date</th>
+                                      <th>Customer</th>
+                                      <th>Type</th>
+                                      <th>Details</th>
+                                      <th>Total Amount</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                      <tr>
+                                          <td class="text-center"></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td>
+                                              <div class="w-100">
+                                                  <table class="w-100 details-tbl" >
+          
+                                                      <tr>
+                                                          <td class="text-right"><small></small></td>
+                                                          <td class="text-right"><small></small></td>
+                                                      </tr>
+                             
+                                                  </table>
+                                              </div>
+                                          </td>
+                                          <td class="text-right"></td>
+                                      </tr>
+                              </tbody>
+                              <tfoot>
+                                  <tr>
+                                      <th colspan="5" class="text-center">Total</th>
+                                      <th class="text-right"></th>
+                                  </tr>
+                              </tfoot>
+                          </table>
+          </div>  
+      </div>
+  </div>
+</div>
+<br>
+
 <h2 style="text-align: center;" class="title">Top Sales</h2>
 <div class="chart-wrap vertical">
   <div class="grid">
