@@ -9,6 +9,11 @@ export class PrintSalesComponent implements OnInit {
 
   constructor() { }
 
+  //Print Page
+ printThisPage() {
+   window.print();
+  }
+
   ngOnInit(): void {
   }
 
