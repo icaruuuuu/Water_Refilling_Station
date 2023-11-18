@@ -29,6 +29,10 @@ const routes: Routes = [
         path: "sales-view",
         loadChildren: ()=>import('./sales-view/sales-view.module').then(mod => mod.SalesViewModule),
       },
+      {
+        path: "print-sales",
+        loadChildren: ()=>import('./print-sales/print-sales.module').then(mod => mod.PrintSalesModule),
+      },
     ]
   }
 ];
