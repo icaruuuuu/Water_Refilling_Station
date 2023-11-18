@@ -11,7 +11,7 @@ export class PrintSalesComponent implements OnInit {
 
   //Print Page
  printThisPage() {
-   window.print();
+   window.print()
   }
 
   ngOnInit(): void {
