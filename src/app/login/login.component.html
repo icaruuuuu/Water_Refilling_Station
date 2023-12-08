@@ -14,22 +14,13 @@
 		
          <form [formGroup]= "loginForm" (ngSubmit)="login()">
             <div class="field">
-               <label for="exampleInputEmail1" class="form-label"></label>
-               <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+               <label for="exampleInputEmail1" class="form-label">User</label>
+               <input formControlName="user" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
             <div class="field ">
-               <label for="exampleInputPassword1" class="form-label"></label>
+               <label for="exampleInputPassword1" class="form-label">Password</label>
                <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
             </div>
-       <!-- <div class="content">
-               <div class="checkbox">
-                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                  <label class="form-check-label" for="exampleCheck1">Remember Me</label>
-               </div>
-               <div class="pass-link">
-                  <a href="#">Forgot password?</a>
-               </div>
-            </div>-->
             <div class="d-grid">   
                 <button type="submit" class="btn btn-outline-primary mt-2"> Sign In </button>
             </div>

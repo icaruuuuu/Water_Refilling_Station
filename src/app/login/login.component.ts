@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
     this.loginForm = this.formBuilder.group({
-      email:[''],
+      user:[''],
       password:['']
     })
   }
@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit {
     this.http.get<any>("http://localhost:3000/login")
     .subscribe(res=>{
       const user = res.find((a:any)=>{
-        return a.email === this.loginForm.value.email && a.password === this.loginForm.value.password
+        return a.user === this.loginForm.value.user && a.password === this.loginForm.value.password
     });
     if(user){
       alert("Login Success!");
