@@ -16,8 +16,24 @@
   "profile": {
     "name": "typicode"
   },
-  "login":[{
-    "user": "admin",
-    "password": "123456"
-  }]
+  "login": [
+    {
+      "user": "admin",
+      "password": "123456"
+    }
+  ],
+  "order": [
+    {
+      "firstName": "Naruto",
+      "lastName": "Uzumaki",
+      "phoneNumber": "09694202000",
+      "house": "123 ",
+      "barangay": "Wind",
+      "city": "Leaf",
+      "province": "Konoha",
+      "type": "5",
+      "amount": "5",
+      "id": 1
+    }
+  ]
 }
