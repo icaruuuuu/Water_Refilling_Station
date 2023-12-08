@@ -17,9 +17,7 @@
     "name": "typicode"
   },
   "login":[{
-    "Email Address": "Admin",
-    "Password": "123456"
+    "email": "admin@gmail.com",
+    "password": "123456"
   }]
-
-
 }
