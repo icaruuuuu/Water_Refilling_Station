@@ -14,12 +14,12 @@
 		
          <form [formGroup]= "loginForm" (ngSubmit)="login()">
             <div class="field">
-               <label for="exampleInputEmail1" class="form-label">User</label>
-               <input formControlName="user" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+               <label for="exampleInputEmail1" class="form-label"></label>
+               <input formControlName="user" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="User">
             </div>
             <div class="field ">
-               <label for="exampleInputPassword1" class="form-label">Password</label>
-               <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
+               <label for="exampleInputPassword1" class="form-label"></label>
+               <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
             </div>
             <div class="d-grid">   
                 <button type="submit" class="btn btn-outline-primary mt-2"> Sign In </button>
