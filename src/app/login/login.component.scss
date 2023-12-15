@@ -4,11 +4,19 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 font-family: 'Poppins', sans-serif;
+}
 
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+	background-color: #f8f9fa;
 }
 html,body{
 display: grid;
-height: 742px;
+height: 775px;
 width: 100%;
 place-items: center;
 //background: #85c8e2 ;

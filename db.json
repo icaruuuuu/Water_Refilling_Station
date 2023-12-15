@@ -1,21 +1,4 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  },
   "login": [
     {
       "user": "admin",
@@ -34,6 +17,30 @@
       "type": "5",
       "amount": "5",
       "id": 1
+    },
+    {
+      "firstName": "Roxas",
+      "lastName": "Mark",
+      "phoneNumber": "09694200911",
+      "house": "Wesleyan",
+      "barangay": "Mabini",
+      "city": "Pampanga",
+      "province": "Tarlac",
+      "type": "5",
+      "amount": "12",
+      "id": 2
+    },
+    {
+      "firstName": "ahdsajhjad",
+      "lastName": "hdadhjh",
+      "phoneNumber": "9e98012139",
+      "house": "iyaiiai",
+      "barangay": "yieyfiwyiu",
+      "city": "iefyiqowi",
+      "province": "y",
+      "type": "2",
+      "amount": "10",
+      "id": 3
     }
   ]
 }
