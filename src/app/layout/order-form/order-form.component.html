@@ -1,136 +1,92 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity= "sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity= "sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"> </script> 
-    <script src= "https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity= "sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"> 
-    </script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity= "sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>    
     <title>Order Form</title>
   </head>
   <body>
-   <div class="container-fluid text-dark py-3">
-           <h1 class="text-center">CVMRR Order Form</h1>  
-   </div>
-   <section class="container my-2 w-50 text-dark p-2">
-    <form class="row g-3 p-3" [formGroup]="orderForm" (ngSubmit)="orderUp()">
-      <div class="mt-1">
-        <label><h2>Basic Information</h2></label>
-      </div>
-        <div class="col-md-4">
-            <label for="validationDefault01" class="form-label">First name</label>
-            <input formControlName="firstName" type="text" class="form-control" id="firstName" name="firstName" value="" placeholder="Michael" required>
+    <div class="container-fluid text-dark py-3">
+      <h1 class="text-center">CVMRR Order Form</h1>
+    </div>
+    <section class="container my-2 w-50 text-dark p-2">
+      <form class="row g-3 p-3" [formGroup]="orderForm" (ngSubmit)="orderUp()">
+        <div class="mt-1">
+          <label><h2>Basic Information</h2></label>
+        </div>
+          <div class="col-md-4">
+              <label for="validationDefault01" class="form-label">First name</label>
+              <input formControlName="firstName" autocomplete="off" type="text" class="form-control" id="firstName" name="firstName" value="" placeholder="Michael" required>
+            </div>
+            <div class="col-md-4">
+              <label for="validationDefault02" class="form-label">Last name</label>
+              <input formControlName="lastName" autocomplete="off" type="text" class="form-control" id="lastName" name="lastName" value="" placeholder="Santos" required>
+            </div>
+            <div class="col-md-4">
+              <label for="validationDefault02" class="form-label">Contact Number</label>
+              <input formControlName="phoneNumber" autocomplete="off" type="text" class="form-control" id="contactNum" name="contactNum" placeholder="09122345678" required>
+            </div>
+            <div class="mt-3">
+              <label><h2>Address</h2></label>
+            </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">House # / Street / Purok</label>
+            <input formControlName="house" autocomplete="off" type="text" class="form-control" id="street" name="street" placeholder="1234 Mabuhay St." required>
           </div>
           <div class="col-md-4">
-            <label for="validationDefault02" class="form-label">Last name</label>
-            <input formControlName="lastName" type="text" class="form-control" id="lastName" name="lastName" value="" placeholder="Santos" required>
+            <label for="inputAddress" class="form-label">Barangay</label>
+            <input formControlName="barangay" autocomplete="off" type="text" class="form-control" id="brgy" name="brgy" placeholder="Mabini Homesite" required>
           </div>
           <div class="col-md-4">
-            <label for="validationDefault02" class="form-label">Contact Number</label>
-            <input formControlName="phoneNumber" type="text" class="form-control" id="contactNum" name="contactNum" placeholder="09122345678" required>
+            <label for="inputAddress" class="form-label">City</label>
+            <input formControlName="city" autocomplete="off" type="text" class="form-control" id="city" name="city" placeholder="Cabanatuan City" required>
           </div>
-          <div class="mt-3">
-            <label><h2>Address</h2></label>
+          <div class="col-md-4">
+            <label for="inputAddress" class="form-label">Province</label>
+            <input formControlName="province" autocomplete="off" type="text" class="form-control" id="province" name="province" placeholder="Nueva Ecija" required>
           </div>
-        <div class="col-12">
-          <label for="inputAddress" class="form-label">House # / Street / Purok</label>
-          <input formControlName="house" type="text" class="form-control" id="street" name="street" placeholder="1234 Mabuhay St." required>
-        </div>
-        <div class="col-md-4">
-          <label for="inputAddress" class="form-label">Barangay</label>
-          <input formControlName="barangay" type="text" class="form-control" id="brgy" name="brgy" placeholder="Mabini Homesite" required>
-        </div>
-        <div class="col-md-4">
-          <label for="inputAddress" class="form-label">City</label>
-          <input formControlName="city" type="text" class="form-control" id="city" name="city" placeholder="Cabanatuan City" required>
-        </div>
-        <div class="col-md-4">
-          <label for="inputAddress" class="form-label">Province</label>
-          <input formControlName="province" type="text" class="form-control" id="province" name="province" placeholder="Nueva Ecija" required>
-        </div>
-
-        <!--Quantity-->
-        <div class=" container dropdown mt-3">
-          <div class="container-fluid">
-              <select formControlName="type" class="form-select form-select-sm mt-2" aria-label="Large select example" id="containerSize" required>
-                <option selected>Size of Container</option>
-                <option value="1">350ml</option>
-                <option value="2">500ml</option>
-                <option value="3">1 Liter</option>
-                <option value="4">2 Liters</option>
-                <option value="5">5Gal Slim</option>
-                <option value="6">5Gal Round</option>
-              </select>
-              <select formControlName="amount" class="form-select form-select-sm mt-2" aria-label="Large select example" id="containerQuantity" required>
-                <option selected>Quantity of Containers</option>
-                <option value="1">One (1)</option>
-                <option value="2">Two (2)</option>
-                <option value="3">Three (3)</option>
-                <option value="4">Four (4)</option>
-                <option value="5">Five (5)</option>
-                <option value="6">Six (6)</option>
-                <option value="7">Seven (7)</option>
-                <option value="8">Eight (8)</option>
-                <option value="9">Nine (9)</option>
-                <option value="10">Ten (10)</option>
-                <option value="11">Eleven (11)</option>
-                <option value="12">Twelve (12)</option>
-              </select>
+  
+          <!--Quantity-->
+          <div class=" container dropdown mt-3">
+            <div class="container-fluid">
+                <select formControlName="type" class="form-select form-select-sm mt-2" aria-label="Large select example" id="containerSize" required>
+                  <option selected>Size of Container</option>
+                  <option value="350ml">350ml</option>
+                  <option value="500ml">500ml</option>
+                  <option value="1 Liter">1 Liter</option>
+                  <option value="2 Liters">2 Liters</option>
+                  <option value="5Gal Slim">5Gal Slim</option>
+                  <option value="5Gal Round">5Gal Round</option>
+                </select>
+                <select formControlName="amount" class="form-select form-select-sm mt-2" aria-label="Large select example" id="containerQuantity" required>
+                  <option selected>Quantity of Containers</option>
+                  <option value="1">One (1)</option>
+                  <option value="2">Two (2)</option>
+                  <option value="3">Three (3)</option>
+                  <option value="4">Four (4)</option>
+                  <option value="5">Five (5)</option>
+                  <option value="6">Six (6)</option>
+                  <option value="7">Seven (7)</option>
+                  <option value="8">Eight (8)</option>
+                  <option value="9">Nine (9)</option>
+                  <option value="10">Ten (10)</option>
+                  <option value="11">Eleven (11)</option>
+                  <option value="12">Twelve (12)</option>
+                </select>
+            </div>
           </div>
-        </div>
-        
-        <!-- Place Order -->
-        <div class="container mt-2"> 
-        <div class="text-center">
-          <button type="submit" class="btn-lg btn-info" data-toggle="modal" data-target="#exampleModal" id="submit"> 
-              Place Order 
-          </button>
+          <!-- Place Order -->
+          <div class="container mt-2"> 
+          <div class="text-center">
+            <button type="submit" class="btn-lg btn-info" data-toggle="modal" data-target="#exampleModal" id="submit"> 
+                Place Order 
+            </button>
+          </div> 
         </div> 
-          <!-- Place Order Modal -->
-          <!--<div class="modal fade text-dark" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"> 
-              <div class="modal-dialog modal-dialog-centered"> 
-                  <div class="modal-content"> 
-                      <div class="modal-header"> 
-                          <h5 class="modal-title" id="exampleModalLabel"> 
-                              Confirmation 
-                          </h5> 
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> 
-                              <span aria-hidden="true"> 
-                                  × 
-                              </span> 
-                          </button> 
-                      </div> 
-    
-                      <div class="modal-body text-dark"> 
-                          <h6 id="modal_body"></h6> 
-                          <button type="button" class="btn btn-success btn-sm" data-toggle="modal"data-target="#exampleModal" id="submit"> 
-                              Close 
-                          </button> 
-                      </div> 
-                  </div> 
-              </div> 
-          </div>--> 
-      </div> 
-    
-      <!--<script type="text/javascript"> 
-          $("#submit").click(function () { 
-              var firstName = $("#firstName").val(); 
-              var lastName = $("#lastName").val();   
-              var contactNum = $("#contactNum").val();   
-              var street = $("#street").val();   
-              var brgy = $("#brgy").val();   
-              var city = $("#city").val();   
-              var province = $("#province").val();   
-              var str = 
-              "Name: " + firstName + " " + lastName + " " + 
-              "Contact Number: " + contactNum + " " +
-              "Address: " + street + ", " + brgy + ", " + city + ", " + province
-              $("#modal_body").html(str); 
-          }); 
-      </script>--> 
       </form>
-   </section>
+    </section>
   </body>
 </html>

@@ -7,40 +7,28 @@
   ],
   "order": [
     {
-      "firstName": "Naruto",
-      "lastName": "Uzumaki",
-      "phoneNumber": "09694202000",
-      "house": "123 ",
-      "barangay": "Wind",
-      "city": "Leaf",
-      "province": "Konoha",
-      "type": "5",
-      "amount": "5",
+      "firstName": "Gilrei",
+      "lastName": "Ramos",
+      "phoneNumber": "09763061358",
+      "house": "23",
+      "barangay": "Bulala",
+      "city": "Cuyapo",
+      "province": "Nueva Ecija",
+      "type": "1 Liter",
+      "amount": "2",
       "id": 1
     },
     {
-      "firstName": "Roxas",
-      "lastName": "Mark",
-      "phoneNumber": "09694200911",
-      "house": "Wesleyan",
+      "firstName": "Michael",
+      "lastName": "Santos",
+      "phoneNumber": "09112233445",
+      "house": "1234",
       "barangay": "Mabini",
-      "city": "Pampanga",
-      "province": "Tarlac",
-      "type": "5",
-      "amount": "12",
+      "city": "Cabanatuan",
+      "province": "Nueva Ecija",
+      "type": "350ml",
+      "amount": "11",
       "id": 2
-    },
-    {
-      "firstName": "ahdsajhjad",
-      "lastName": "hdadhjh",
-      "phoneNumber": "9e98012139",
-      "house": "iyaiiai",
-      "barangay": "yieyfiwyiu",
-      "city": "iefyiqowi",
-      "province": "y",
-      "type": "2",
-      "amount": "10",
-      "id": 3
     }
   ]
 }

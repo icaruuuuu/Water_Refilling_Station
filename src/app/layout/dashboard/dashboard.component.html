@@ -1,44 +1,34 @@
-
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 <h2>Dashboard</h2>
 <div class="container">
-    <div class="row">
-        <div class="col-md-4 col-xl-3">
-            <div class="card bg-c-blue order-card">
-                <div class="card-block">
-                    <h6 class="m-b-20">Total Customers<i class="fa fa-user f-right"></i></h6>
-                    <h2 class="text-right"><span>486</span></h2>
-                </div>
-            </div>
+  <div class="row">
+    <div class="col-md-4 col-xl-3">
+      <div class="card bg-c-blue order-card">
+        <div class="card-block">
+          <h6 class="m-b-20">Total Customers<i class="fa fa-user f-right"></i></h6>
+          <h2 class="text-right"><span>{{ getUniqueCustomerCount() }}</span></h2>
         </div>
-        
-        <div class="col-md-4 col-xl-3">
-            <div class="card bg-c-green order-card">
-                <div class="card-block">
-                    <h6 class="m-b-20">Orders Received<i class="fa fa-shopping-cart f-right"></i></h6>
-                    <h2 class="text-right"><span>486</span></h2>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-4 col-xl-3">
-            <div class="card bg-c-pink order-card">
-                <div class="card-block">
-                    <h6 class="m-b-20">Completed Orders<i class="fa fa-credit-card f-right"></i></h6>
-                    <h2 class="text-right"><span>486</span></h2>
-                </div>
-            </div>
-        </div>
+      </div>
+    </div>
 
-        <div class="col-md-4 col-xl-3">
-          <div class="card bg-c-yellow order-card">
-              <div class="card-block">
-                  <h6 class="m-b-20">Total Products<i class="fa fa-tint f-right"></i></h6>
-                  <h2 class="text-right"><span>6</span></h2>
-              </div>
-            </div>
+    <div class="col-md-4 col-xl-3">
+      <div class="card bg-c-green order-card">
+        <div class="card-block">
+          <h6 class="m-b-20">Orders Received<i class="fa fa-shopping-cart f-right"></i></h6>
+          <h2 class="text-right"><span>{{ getTotalOrders() }}</span></h2>
         </div>
-	</div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-xl-3">
+      <div class="card bg-c-yellow order-card">
+        <div class="card-block">
+          <h6 class="m-b-20">Total Products<i class="fa fa-tint f-right"></i></h6>
+          <h2 class="text-right"><span>6</span></h2>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <br>
@@ -46,11 +36,11 @@
 <h2 style="text-align: center;" class="title">Sales Analytics</h2>
 <div class="chart-wrap vertical">
   <div class="grid">
-      <div class="bar" style="--bar-value:85%;" data-name="350ml" title="350ml 85%"></div>
-      <div class="bar" style="--bar-value:23%;" data-name="500ml" title="500ml 23%"></div>
-      <div class="bar" style="--bar-value:7%;" data-name="1 Liter" title="1 Litter 7%"></div>
-      <div class="bar" style="--bar-value:38%;" data-name="2 Liters" title="2 Litters 38%"></div>
-      <div class="bar" style="--bar-value:35%;" data-name="5 Gallon Slim" title="5 Gallon Slim 35%"></div>
-      <div class="bar" style="--bar-value:30%;" data-name="5 Gallon Round" title="5 Gallon Round 30%"></div>
+    <div *ngFor="let orderType of ['350ml', '500ml', '1 Liter', '2 Liters', '5 Gallon Slim', '5 Gallon Round']"
+         class="bar"
+         [style.--bar-value]="getPercentageByType(orderType)"
+         [attr.data-name]="orderType"
+         [title]="getBarTitle(orderType)">
+    </div>
   </div>
 </div>
