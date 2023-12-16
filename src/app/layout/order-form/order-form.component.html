@@ -50,8 +50,12 @@
           </div>
   
           <!--Quantity-->
-          <div class=" container dropdown mt-3">
+          <div class="mt-1">
+            <label><h2>Order Information</h2></label>
+          </div>
+          <div class=" container dropdown">
             <div class="container-fluid">
+              <label><h6>Container Size</h6></label>
                 <select formControlName="type" class="form-select form-select-sm mt-2" aria-label="Large select example" id="containerSize" required>
                   <option selected>Size of Container</option>
                   <option value="350ml">350ml</option>
@@ -61,6 +65,7 @@
                   <option value="5Gal Slim">5Gal Slim</option>
                   <option value="5Gal Round">5Gal Round</option>
                 </select>
+                <label><h6 class="mt-2">Quantity of Containers</h6></label>
                 <select formControlName="amount" class="form-select form-select-sm mt-2" aria-label="Large select example" id="containerQuantity" required>
                   <option selected>Quantity of Containers</option>
                   <option value="1">One (1)</option>

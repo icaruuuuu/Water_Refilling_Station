@@ -29,6 +29,18 @@
       "type": "350ml",
       "amount": "11",
       "id": 2
+    },
+    {
+      "firstName": "erica",
+      "lastName": "cape",
+      "phoneNumber": "09454085112",
+      "house": "123",
+      "barangay": "camp",
+      "city": "cab",
+      "province": "n.e",
+      "type": "2 Liters",
+      "amount": "2",
+      "id": 3
     }
   ]
 }
