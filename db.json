@@ -41,6 +41,18 @@
       "type": "2 Liters",
       "amount": "2",
       "id": 3
+    },
+    {
+      "firstName": "erics",
+      "lastName": "santos",
+      "phoneNumber": "",
+      "house": "hjhhf",
+      "barangay": "jkhfjkh",
+      "city": "jkfhrj",
+      "province": "jhjk",
+      "type": "2 Liters",
+      "amount": "3",
+      "id": 4
     }
   ]
 }
